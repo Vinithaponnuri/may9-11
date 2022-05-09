@@ -1,2 +1,14 @@
-# may9-11
-as1
+n=int(input())
+d={}
+for i in range(n):
+    x=input().split('@')[1]
+    d[x[0]]=x[1]
+while True:
+    try:
+        name=input()
+        if name in d:
+            print(name,'=',d[name],sep='')
+        else:
+            print('not found')
+    except:
+        break
